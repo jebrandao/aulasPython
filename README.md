@@ -6,7 +6,20 @@ Python 3.12+.
 
 > Material didático baseado no curso do **Prof. Fabrício Curvello**
 > ([playlist no YouTube](https://www.youtube.com/playlist?list=PLIn2kYkmuf41bAWw2Ve_cd4TS2ixm78_c)).
-> Os slides não fazem parte deste repositório; o código foi reescrito a partir dos conceitos de cada aula.
+> O código foi reescrito a partir dos conceitos de cada aula. Os slides, no padrão visual SENAI, estão em [`material-slides`](material-slides).
+
+## Slides e listas de exercícios
+
+A pasta [`material-slides`](material-slides) reúne o material de aula no padrão visual SENAI (Firjan), em **`.pptx` e `.pdf`**:
+
+| Pasta | Conteúdo |
+| --- | --- |
+| [`Python - Modulo 1 - Logica de Programacao`](<material-slides/Python - Modulo 1 - Logica de Programacao>) | Aulas 00 a 09, listas de exercícios (03, 04, 05) e guia PEP 8 |
+| [`Python - Modulo 2 - Programacao Orientada a Objetos`](<material-slides/Python - Modulo 2 - Programacao Orientada a Objetos>) | Aulas 10 a 18 |
+| [`Python - Modulo 3 - Django`](<material-slides/Python - Modulo 3 - Django>) | Aulas 19 a 29 |
+
+Cada arquivo mantém o número da aula (`Python 05 - ...`), o que facilita relacioná-lo à pasta de código correspondente.
+O `.pptx` usa as fontes **Lato Light** e **Nunito Sans**; instale-as para ver o arquivo idêntico ao PDF.
 
 ## Como usar
 

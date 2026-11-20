@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Produtos</title>
+</head>
+<body>
+    <h1>Produtos</h1>
+
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {# Aula 24 – linhas fixas escritas diretamente no HTML #}
+            <tr>
+                <td>Notebook Dell</td>
+                <td>3.800,00</td>
+            </tr>
+            <tr>
+                <td>Notebook Lenovo</td>
+                <td>3.200,00</td>
+            </tr>
+
+            {# Exemplo 1: um produto que vem do contexto da view #}
+            <tr>
+                <td>{{ produto }}</td>
+                <td>{{ preco|floatformat:"2g" }}</td>
+            </tr>
+
+            {# Exemplo 2: vários produtos, percorridos com a tag for #}
+            {% for item in produtos %}
+            <tr>
+                <td>{{ item.produto }}</td>
+                <td>{{ item.preco|floatformat:"2g" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {# Filtros funcionam como funções: length conta os itens da lista #}
+    <p>Total de Smart TVs: {{ produtos|length }}</p>
+
+    <p><a href="{% url 'inicio:index' %}">Voltar ao início</a></p>
+</body>
+</html>

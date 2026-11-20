@@ -1,0 +1,32 @@
+/* Aula 29 – estilos básicos, apenas para teste e aprendizado. */
+body {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: system-ui, sans-serif;
+    margin: 2rem;
+}
+
+a {
+    text-decoration: none; /* no slide estava "text_decoration", propriedade que não existe */
+    color: #cecece;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 150px; /* imagens grandes são limitadas a 150px de largura */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th,
+td {
+    border: 1px solid #666666;
+    padding: 0.4rem 0.8rem;
+    text-align: left;
+}

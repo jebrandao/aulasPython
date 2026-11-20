@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ cliente.nome }}</title>
+    <link rel="stylesheet" href="{% static 'css/estilos_clientes.css' %}">
+</head>
+<body>
+    <h1>{{ cliente.nome }}</h1>
+    <img src="{% static 'images/pessoas.svg' %}" alt="Ilustração de pessoas">
+
+    <ul>
+        <li><strong>Código:</strong> {{ cliente.id }}</li>
+        <li><strong>E-mail:</strong> {{ cliente.email }}</li>
+        <li><strong>Nascimento:</strong> {{ cliente.nascimento|date:"d/m/Y" }}</li>
+    </ul>
+
+    <p><a href="{% url 'clientes:index_clientes' %}">Voltar para a lista de clientes</a></p>
+</body>
+</html>

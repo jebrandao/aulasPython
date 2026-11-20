@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" role="img" aria-label="Três pessoas">
+  <circle cx="30" cy="32" r="14" fill="#cecece"/>
+  <path d="M6 88c0-22 10-34 24-34s24 12 24 34z" fill="#cecece"/>
+  <circle cx="75" cy="26" r="16" fill="#ffffff"/>
+  <path d="M47 92c0-26 12-40 28-40s28 14 28 40z" fill="#ffffff"/>
+  <circle cx="120" cy="32" r="14" fill="#cecece"/>
+  <path d="M96 88c0-22 10-34 24-34s24 12 24 34z" fill="#cecece"/>
+</svg>

@@ -1,0 +1,11 @@
+"""Desvio condicional encadeado: abaixo de 100, entre 100 e 200 ou acima de 200 (if dentro de else)."""
+
+num = int(input("Digite um número: "))
+
+if num < 100:
+    print(f"{num} está abaixo de 100.")
+else:
+    if num <= 200:
+        print(f"{num} está entre 100 e 200.")
+    else:
+        print(f"{num} está acima de 200.")

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página inicial</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Django Básico!</h1>
+    <p>Projeto de estudo do curso de Python (Módulo 3 – Django).</p>
+
+    <ul>
+        <li><a href="{% url 'produtos:index_produtos' %}">Produtos</a></li>
+        <li><a href="{% url 'clientes:index_clientes' %}">Clientes</a></li>
+        <li><a href="{% url 'admin:index' %}">Área administrativa</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[project]
+name = "curso-python-senai"
+version = "1.0.0"
+description = "Projetos aula a aula do curso de Python (Lógica, POO e Django)"
+requires-python = ">=3.12"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["modulo-3-django/djangobasico/*/migrations"]
+
+[tool.ruff.lint]
+# Regras: pycodestyle, pyflakes, isort, pep8-naming, pyupgrade, bugbear, simplify
+select = ["E", "F", "W", "I", "N", "UP", "B", "SIM"]
+# E501 (linha longa) fica a cargo do formatador; vários textos didáticos têm frases longas.
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Estes arquivos mostram DE PROPÓSITO as formas antigas (.format e %) ao lado das f-strings.
+"modulo-1-logica-de-programacao/aula-03-programacao-sequencial/interpolacao_string*.py" = ["UP031", "UP032"]
